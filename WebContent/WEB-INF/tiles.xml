@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="layout.tiles" template="/WEB-INF/views/layout/baseLayout.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Login ** -->
+	<definition name="layoutLogin.tiles" template="/WEB-INF/views/layout/baseLayoutLogin.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/layout/header.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>
+	
+	<!-- ** Corretor ** -->
+	<definition name="layoutCorretor.tiles" template="/WEB-INF/views/layout/baseLayoutCorretor.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/layout/headerPrincipal.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>	
+	<definition name="layoutCorretor.tiles" template="/WEB-INF/views/layout/baseLayoutCorretor.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/layout/headerPrincipal.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+	</definition>	
+	
+	<!-- ** Principal ** -->	
+	<definition name="layoutPrincipal.tiles" template="/WEB-INF/views/layout/baseLayoutPrincipal.jsp">
+		<put-attribute name="title" value=""></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/views/layout/headerPrincipal.jsp"></put-attribute>
+		<put-attribute name="body" value=""></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp"></put-attribute>		
+	</definition>	
+	
+	<!-- ** Album ** -->
+	<definition name="album.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Adição de álbuns"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/albuns/adicionar.jsp"></put-attribute>
+	</definition>
+	<definition name="album.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Edição de álbum"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/albuns/alterar.jsp"></put-attribute>
+	</definition>
+	<definition name="album.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Exibição de álbuns"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/albuns/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Musica ** -->
+	<definition name="musica.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Adição de músicas"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/musicas/adicionar.jsp"></put-attribute>
+	</definition>
+	<definition name="musica.alterar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Edição de música"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/musicas/alterar.jsp"></put-attribute>
+	</definition>
+	<definition name="musica.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Exibição de músicas"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/musicas/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Usuário ** -->
+	<definition name="usuario.adicionar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Adição de usuários"></put-attribute>
+		<put-attribute name="body"
+			value="/WEB-INF/views/usuarios/adicionar.jsp"></put-attribute>
+	</definition>
+	<definition name="usuario.listar.tiles" extends="layout.tiles">
+		<put-attribute name="title"
+			value="Projeto Modelo MVC: Exibição de usuários"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/usuarios/listar.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ** Home ** -->
+	<definition name="home.login.tiles" extends="layoutLogin.tiles">
+		<put-attribute name="title" value="Projeto Modelo MVC: Login"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/login.jsp"></put-attribute>
+	</definition>
+	<definition name="home.bemvindo.tiles" extends="layout.tiles">
+		<put-attribute name="title" value="Projeto Modelo MVC: Bem-vindo!"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/bemVindo.jsp"></put-attribute>
+	</definition>
+
+	<!-- ** Principal ** -->
+	<definition name="home.principal.tiles" extends="layoutPrincipal.tiles">
+		<put-attribute name="title" value="Projeto Modelo MVC: Principal"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/home/principal.jsp"></put-attribute>
+	</definition>	
+	
+	<!-- ** Corretores ** -->
+	<definition name="corretor.adicionar.tiles" extends="layoutCorretor.tiles">
+		<put-attribute name="title" value="Projeto Modelo MVC: Adicionar Corretor"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/corretores/adicionar.jsp"></put-attribute>
+	</definition>	
+	<definition name="corretor.adicionarDados.tiles" extends="layoutCorretor.tiles">
+		<put-attribute name="title" value="Projeto Modelo MVC: Adicionar Corretor-Dados"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/views/corretores/adicionarDados.jsp"></put-attribute>
+	</definition>		
+	
+</tiles-definitions>
